@@ -322,6 +322,7 @@ h6 {
   text-align: center;
   letter-spacing: 1px;
 }
+
 .love-container {
   display: flex;
   -webkit-box-pack: justify;
@@ -383,12 +384,9 @@ h6 {
   position: absolute;
   left: 0px;
   width: 100%;
+  height: 800px;
   min-height: 500px;
-  background: linear-gradient(
-    134deg,
-    rgb(106, 152, 240) 0%,
-    rgb(73, 97, 220) 99%
-  );
+  background: rgb(106, 152, 240) 0%;
   transform: skewY(-3deg);
   z-index: -1;
   pointer-events: none;
@@ -399,8 +397,7 @@ h6 {
   align-items: center;
   margin-top: 200px;
 }
-.article div {
-}
+
 .avatar {
   width: 230px;
   height: 230px;
@@ -483,6 +480,47 @@ p {
   height: auto;
   font-size: 6em;
 }
+
+/* SKILLS*/
+.about-skills {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.skil {
+  position: relative;
+}
+.skill-title {
+  margin: 20px auto;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: rgb(248, 248, 248);
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.skills {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+.skill {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.skill img {
+  width: 50px;
+}
+.skill p {
+  color: rgb(248, 248, 248);
+}
+/*------------------------*/
 .parallax-outer {
   z-index: -1;
 }
@@ -749,6 +787,17 @@ footer {
 .credits {
   font-size: 13px;
   color: rgb(248, 248, 248);
+}
+.fMGhCo {
+  position: absolute;
+  background: rgb(106, 152, 240) 0%;
+  transform: skewY(-3deg);
+  right: 0px;
+  left: 0px;
+  width: 100%;
+  height: 900px;
+  min-height: 500px;
+  max-height: 850px;
 }
 @media (min-width: 450px) {
   input[type='checkbox'] {
