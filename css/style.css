@@ -584,6 +584,7 @@ p {
   padding-top: 56.25%;
   background-color: rgb(199, 208, 255);
   border-radius: 10px;
+  margin: 50px 0;
 }
 .preview-card img {
   position: absolute;
@@ -601,10 +602,167 @@ p {
   gap: 5%;
   padding: 10px;
 }
+#contact {
+  margin-bottom: 200px;
+  height: 100%;
+}
+.contact-h2 {
+  margin: 100px auto;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: rgb(109, 131, 242);
+  text-align: center;
+  letter-spacing: 1px;
+}
+.contact-container {
+  width: calc(100% - 30px);
+  position: relative;
+  height: 400px;
+  margin-bottom: 50px;
+  margin-top: 150px;
+  background: linear-gradient(
+    134deg,
+    rgb(106, 152, 240) 0%,
+    rgb(73, 97, 220) 99%
+  );
+  padding: 20px;
+  border-radius: 10px;
+}
+.contact-icon,
+.contact-icon p,
+.contact-icon h3 {
+  color: rgb(248, 248, 248);
+}
+.contact-icon i {
+  font-size: 5rem;
+}
+.contact-icon {
+  position: absolute;
+  top: 80%;
+  transform: translateY(-50%);
+  margin-left: 6%;
+  width: fit-content;
+  text-align: center;
+  height: 100%;
+}
+
+/* /// Form validation/// */
+
+#small-1,
+#small-3,
+#small-4 {
+  color: red;
+}
+form {
+  position: absolute;
+  width: 70%;
+  top: 0;
+  right: -40px;
+  padding: 50px 30px;
+  background: rgb(248, 248, 248);
+  border-radius: 10px;
+  min-height: 100%; /* Set the minimum height to 100% */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'email name'
+    'textarea textarea'
+    '. button';
+}
+.label__email {
+  grid-area: email / email / email / email;
+}
+.label__name {
+  grid-area: name / name / name / name;
+}
+.label__message {
+  grid-area: textarea / textarea / textarea / textarea;
+}
+.submit__btn {
+  justify-self: end;
+  width: fit-content;
+  grid-area: button / button / button / button;
+}
+.dxFdrJ {
+  background: linear-gradient(
+    134deg,
+    rgb(106, 152, 240) 0%,
+    rgb(73, 97, 220) 99%
+  );
+  color: rgb(248, 248, 248);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+  width: auto;
+  height: auto;
+  font-size: 12px;
+  margin: 0px;
+  padding: 12px;
+  border-radius: 5px;
+}
+form label span {
+  font-size: 0.85em;
+  color: rgb(37, 37, 37);
+}
+form input,
+form textarea {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: rgb(234, 234, 234);
+  border: none;
+  margin: 10px 0px;
+  width: 100%;
+}
+
+/*   FOOTER   */
+footer {
+  width: 100vw;
+  padding: 10px;
+  background: linear-gradient(
+    134deg,
+    rgb(106, 152, 240) 0%,
+    rgb(73, 97, 220) 99%
+  );
+  text-align: center;
+}
+.icon-items a {
+  color: rgb(248, 248, 248);
+}
+.icons {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 200%;
+  padding: 2rem 5rem 2rem 5rem; /* Adjust the padding values */
+  margin-top: 2rem; /* Adjust the margin-top value */
+}
+.icon-items:hover {
+  transform: scale(1.5);
+  transition-duration: 1.5s;
+}
+.copyright {
+  margin: 0 0 5px 0;
+  color: rgb(248, 248, 248);
+}
+.credits {
+  font-size: 13px;
+  color: rgb(248, 248, 248);
+}
 @media (min-width: 450px) {
   input[type='checkbox'] {
     height: 0px;
     width: 0px;
     visibility: hidden;
+  }
+}
+@media (min-width: 768px) {
+  .icons {
+    display: flex;
+    justify-content: center;
+    width: 63.8%;
+    margin: auto;
+    gap: 2rem;
   }
 }
