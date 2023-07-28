@@ -654,7 +654,9 @@ p {
 }
 .contact-container {
   width: calc(100% - 30px);
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  justify-content: space-between;
   height: 400px;
   margin-bottom: 50px;
   margin-top: 150px;
@@ -663,9 +665,10 @@ p {
     rgb(106, 152, 240) 0%,
     rgb(73, 97, 220) 99%
   );
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 10px;
 }
+
 .contact-icon,
 .contact-icon p,
 .contact-icon h3 {
@@ -675,13 +678,14 @@ p {
   font-size: 5rem;
 }
 .contact-icon {
-  position: absolute;
-  top: 80%;
-  transform: translateY(-50%);
   margin-left: 6%;
   width: fit-content;
-  text-align: center;
   height: 100%;
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  text-align: center;
 }
 
 /* /// Form validation/// */
@@ -692,10 +696,10 @@ p {
   color: red;
 }
 form {
-  position: absolute;
+  /* position: absolute; */
   width: 70%;
-  top: 0;
-  right: -40px;
+  /* top: 0;
+  right: -40px; */
   padding: 50px 30px;
   background: rgb(248, 248, 248);
   border-radius: 10px;
@@ -799,7 +803,7 @@ footer {
   min-height: 500px;
   max-height: 850px;
 }
-@media (min-width: 450px) {
+/* @media (min-width: 450px) {
   input[type='checkbox'] {
     height: 0px;
     width: 0px;
@@ -814,4 +818,25 @@ footer {
     margin: auto;
     gap: 2rem;
   }
+} */
+
+@media (max-width: 1027px) {
+  body {
+    .fMGhCo {
+      min-height: 1100px;
+      max-height: 1500px;
+      height: 1250px;
+    }
+    .about-skills {
+      flex-direction: column;
+    }
+    .about-container {
+      height: 1040px;
+    }
+  }
 }
+/* Red background color for screens up to 767px */
+/* @media (max-width: 778px) {
+  body {
+  }
+} */
