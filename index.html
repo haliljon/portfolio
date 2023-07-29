@@ -36,9 +36,43 @@
                           type="checkbox"
                           class="checkbox"
                           aria-label="toggle theme" /><div class="knobs"></div
-                        ><div
-                          class="layer"
-                        ></div></div></div></li></ul></nav></div></div></header
+                        ><div class="layer"></div></div></div></li
+                ></ul>
+                <div id="menu" class="container">
+                  <div class="mobile-menu">
+                    <div>
+                      <a onclick="closeMenu()" id="close-btn"
+                        ><i class="fa-solid fa-xmark"></i
+                      ></a>
+                    </div>
+                    <ul>
+                      <li class="menu-item" onclick="closeMenu()"
+                        ><a href="#home"
+                          ><i class="fa-solid fa-house"></i> Home</a
+                        ></li
+                      >
+                      <li class="menu-item" onclick="closeMenu()"
+                        ><a href="#about"
+                          ><i class="fa-solid fa-address-card"></i> About me</a
+                        ></li
+                      >
+                      <li class="menu-item" onclick="closeMenu()"
+                        ><a href="#projects"
+                          ><i class="fa-solid fa-briefcase"></i> Projects</a
+                        ></li
+                      >
+                      <li class="menu-item" onclick="closeMenu()"
+                        ><a href="#contact"
+                          ><i class="fa-solid fa-address-book"></i> Contact</a
+                        ></li
+                      >
+                    </ul>
+                  </div> </div
+                ><div>
+                  <a href="javascript:openMenu()" class="menu-btn">
+                    <i class="fa-solid fa-bars"></i
+                  ></a>
+                </div> </nav></div></div></header
         ><main class="main main-container"
           ><section id="home" class="home">
             <img
@@ -412,7 +446,8 @@
                 ><div class="project-details"
                   ><div class="detail-container"
                     ><h2>Math Magicians</h2>
-                    <p id="math-magic">It is a simple calculator application made with React.</p
+                    <p id="math-magic"
+                      >It is a simple calculator application made with React.</p
                     ><div class="project-links"
                       ><a
                         target="__blank"

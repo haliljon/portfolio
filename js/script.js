@@ -41,3 +41,22 @@ form.addEventListener('submit', (element) => {
         spanText.style.display = 'block'
     }
 });
+
+////////  Menu    ///////
+
+const menu = document.querySelector('#menu');
+const hamburger = document.querySelector('.menu-btn');
+menu.style.backgroundColor = '#ffffff';
+
+function openMenu() {
+    menu.style.display = 'block';
+    hamburger.style.display = 'none';
+}
+
+function closeMenu() {
+    menu.style.display = 'none';
+    hamburger.style.display = 'block';
+}
+
+document.querySelector('.menu-btn').addEventListener('click', openMenu());
+document.querySelector('#close-btn').addEventListener('click', closeMenu());

@@ -903,6 +903,38 @@ footer {
     margin: auto;
     padding: 5% 0;
   }
+  .nav-bar ul {
+    visibility: visible;
+    display: flex;
+    gap: 3.2rem;
+    list-style: none;
+  }
+
+  .mobile-menu ul,
+  .mobile-menu div {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+  .outer-list {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+  #menu {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: fit-content;
+    width: 100%;
+    padding: 10%;
+  }
 }
 @media (max-width: 593px) {
   .fMGhCo {
@@ -912,5 +944,15 @@ footer {
 @media (max-width: 430px) {
   .fMGhCo {
     height: 1650px;
+  }
+}
+@media (min-width: 778px) and (max-width: 1024px) {
+  .menu-btn {
+    display: none !important;
+  }
+}
+@media (min-width: 1028px) {
+  .menu-btn {
+    display: none !important;
   }
 }
