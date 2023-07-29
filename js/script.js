@@ -60,3 +60,16 @@ function closeMenu() {
 
 document.querySelector('.menu-btn').addEventListener('click', openMenu());
 document.querySelector('#close-btn').addEventListener('click', closeMenu());
+
+///////// Dark Mode /////////
+
+const darkMode = document.querySelector('.checkbox');
+
+darkMode.onclick = function () {
+    document.body.classList.toggle('dark-theme');
+    if (document.body.classList.contains('dark-theme')) {
+        localStorage.setItem('dark-theme', 'enabled');
+    } else {
+        localStorage.setItem('dark-theme', 'disabled');
+    }
+}
